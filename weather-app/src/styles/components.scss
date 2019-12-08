@@ -1,0 +1,139 @@
+
+/* HEADER */
+header {
+   width: 100%;
+   .title-bar {
+      padding: 20px $sidePadding;
+      background-color: $darkGreen;
+      h1 {
+         font-size: 18px;
+         color: $lightGreen;
+      }
+   }
+   nav {
+      padding: 20px $sidePadding;
+      ul {
+         display: flex;
+         justify-content: flex-start;
+         li {
+            margin-right: 130px;
+            a {
+               color: $darkGrey;
+               padding: 0 40px 20px ;
+            }
+            a:hover {
+               color: $lightGreen;
+            }
+            a.router-link-exact-active {
+               color: $green;
+               border-bottom: 2px solid $green;
+            }
+         }
+      }
+   }
+}
+
+/* CONTENT */
+main {
+   border-top: 2px solid $lightGreen;
+   background-color: $grey;
+   padding: 20px 100px;
+   display: flex;
+   justify-content: space-between;
+}
+
+/* SEARCH AREA */
+.search-area {
+   width: 30%;
+   display: table;
+   .item {
+      margin-bottom: 20px;
+      label {
+         display: block;
+         width: 100%;
+         margin-bottom: 5px;
+      }
+      input {
+         display: block;
+         width: 100%;
+      }
+   }
+   button {
+      padding: 10px;
+      border: none;
+      background-color: $darkBlue;
+      color: $lightBlue;
+      cursor: pointer;
+      border-radius: 2px;
+      float: right;
+   }
+}
+
+/* CHART AREA */
+.chart-area {
+   width: 67%;
+
+   header {
+      margin-bottom: 40px;
+      display: block;
+      .selector {
+         border: 2px solid $grey;
+         border-radius: 30px;
+         padding: 3px 5px;
+         width: 60%;
+         margin: 0 auto;
+         ul {
+            display: flex;
+            justify-content: space-between;
+            li {
+               display: inline-block;
+               cursor: pointer;
+               color: $darkGrey;
+            }
+            li:not(.active){
+               margin-top: 3px;
+            }
+            li:not(.active):last-child {
+               margin-right: 15px;
+            }
+            li:not(.active):first-child {
+               margin-left: 15px;
+            }            
+            li.active {
+               background-color: $green;
+               color: $lightGreen;
+               padding: 3px 15px;
+               border-radius: 20px;
+            }
+         }
+      }
+   }
+}
+
+.weather-area {
+   width: 67%;
+   h2 {
+      margin-bottom: 20px;
+   }
+   .details {
+      ul {
+         li {
+            margin-bottom: 10px;
+         }
+      }
+   }
+}
+
+
+/* FOOTER */
+footer {
+   padding: 20px 0;
+   background-color: $lightGrey;
+   p {
+      text-transform: uppercase;
+      text-align: center;
+      color: $darkGreen;
+      font-weight: bold;
+      font-size: 10px;
+   }
+}
